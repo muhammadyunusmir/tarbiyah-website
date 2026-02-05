@@ -1,35 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Contact Us | Zaytoon Academy</title>
+
+  <!-- Main Site CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Google Font (Elegant & Different) -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    /* Contact-specific styling */
+    .contact-card {
+      max-width: 650px;
+      margin: auto;
+      padding: 45px;
+      border-radius: 22px;
+      text-align: center;
+    }
+
+    .contact-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 30px;
+      margin-bottom: 25px;
+      color: var(--green-light);
+    }
+
+    .contact-info {
+      font-size: 18px;
+      margin: 18px 0;
+      color: var(--text-light);
+    }
+
+    .contact-info span {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: var(--green-light);
+    }
+
+    .contact-info a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-info a:hover {
+      color: var(--green-light);
+      text-decoration: underline;
+    }
+
+    .security-note {
+      margin-top: 35px;
+      padding: 20px;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.08);
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--text-soft);
+    }
+  </style>
 </head>
 
-<body>
+<body class="home-page">
 
 <header></header>
 
 <section class="section">
-<h2 class="section-title">Contact Us</h2>
+  <h4 class="section-title">Contact Us</h4>
 
-<div class="container">
+  <div class="container">
 
-<form class="card" style="max-width:600px;margin:auto">
+    <div class="card contact-card">
 
-<input type="text" placeholder="Full Name" required
-style="width:100%;padding:12px;margin:10px 0;">
+      <div class="contact-title">
+        We’d Love to Hear From You
+      </div>
 
-<input type="email" placeholder="Email" required
-style="width:100%;padding:12px;margin:10px 0;">
+      <div class="contact-info">
+        <span>📞 Phone</span>
+        +91 96242 35132
+      </div>
 
-<textarea placeholder="Message"
-style="width:100%;padding:12px;margin:10px 0;height:140px;"></textarea>
+      <div class="contact-info">
+        <span>📧 Email</span>
+        <a href="mailto:hammadhusainmansuri@gmail.com">
+          hammadhusainmansuri@gmail.com
+        </a>
+      </div>
 
-<button class="btn">Send Message</button>
+      <div class="security-note">
+        <strong>Important Note:</strong><br>
+        For security and privacy reasons, we do not provide online payment
+        services on our website. All admissions and payments are handled
+        personally after direct communication to ensure transparency,
+        safety, and trust for our students and parents.
+      </div>
 
-</form>
+    </div>
 
-</div>
+  </div>
 </section>
 
 <footer></footer>
