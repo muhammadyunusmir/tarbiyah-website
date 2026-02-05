@@ -62,13 +62,27 @@
       line-height: 1.7;
       color: var(--text-soft);
     }
-     /* Prevent email overflow on mobile */
-        .contact-info a {
-        word-break: break-all;
+    
+      .contact-info a {
+         word-break: break-all;
          overflow-wrap: anywhere;
          display: inline-block;
-        max-width: 100%;
+         max-width: 100%;
     }
+    .back-btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.back-btn:hover {
+  color: var(--green-light);
+  text-decoration: underline;
+}
+
 
 
     
@@ -80,6 +94,7 @@
 <header></header>
 
 <section class="section">
+  <a href="index.html" class="back-btn">← Back to Home</a>
   <h4 class="section-title">Contact Us</h4>
 
   <div class="container">
