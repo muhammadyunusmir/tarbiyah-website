@@ -62,6 +62,16 @@
       line-height: 1.7;
       color: var(--text-soft);
     }
+     /* Prevent email overflow on mobile */
+        .contact-info a {
+        word-break: break-all;
+         overflow-wrap: anywhere;
+         display: inline-block;
+        max-width: 100%;
+    }
+
+
+    
   </style>
 </head>
 
