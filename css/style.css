@@ -352,6 +352,23 @@ header {
   top: 0;
   float: right;
 }
+/* ===== MOBILE MODAL TEXT SIZE FIX ===== */
+@media (max-width: 768px) {
+  .modal-content p,
+  .modal-content li {
+    font-size: 17.5px;   /* increase text */
+    line-height: 1.8;
+  }
+
+  .modal-content h2 {
+    font-size: 24px;
+  }
+
+  .modal-content h4 {
+    font-size: 18px;
+  }
+}
+
 
 
 /* ===================== FOOTER ===================== */
