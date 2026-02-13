@@ -453,14 +453,14 @@ footer a:hover {
   }
 
   .modal-content p {
-    font-size: 16px;      /* increased */
-    line-height: 1.6;
+    font-size: 17px;      /* increased */
+    line-height: 1.7;
   }
 
   .modal-content li {
-    font-size: 16px;      /* increased */
-    line-height: 1.6;
-    margin-bottom: 6px;
+    font-size: 18px;      /* increased */
+    line-height: 1.8;
+    margin-bottom: 7px;
   }
 
   .close {
