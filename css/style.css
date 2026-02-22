@@ -1,3 +1,17 @@
+/* ================= HOME PAGE GREEN ONLY ================= */
+.home-page {
+  background: radial-gradient(circle at top, #1f6f4a, #0f3d2e);
+  color: #ffffff;
+}
+
+.home-page h1,
+.home-page h2,
+.home-page h3,
+.home-page p,
+.home-page li {
+  color: #ffffff;
+}
+
 /* ===================== RESET ===================== */
 * {
   margin: 0;
@@ -82,26 +96,18 @@ header {
 
 /* ===================== HERO ===================== */
 .hero {
-  background: var(--green-soft);
-  padding: 100px 0;
-}
-
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: center;
+  padding: 110px 0;
 }
 
 .hero h1 {
   font-size: 44px;
-  margin-bottom: 20px;
-  color: var(--green-dark);
+  color: #ffffff;
+  font-weight: 700;
 }
 
 .hero p {
   font-size: 18px;
-  color: var(--text-muted);
+  color: #e6f2ec;
 }
 
 /* ===================== BUTTON ===================== */
@@ -166,31 +172,34 @@ header {
 
 /* ===================== COURSE SECTION ===================== */
 .course-grid {
-  max-width: 1000px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  max-width: 850px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .course-box {
-  background: var(--white);
+  background: #ffffff;
   padding: 30px;
   border-radius: 18px;
-  border: 1px solid var(--border-soft);
+  border: 1px solid #e2ece6;
   transition: 0.3s ease;
-  text-align: left;
+  text-align: center;
+  width: 100%;
+}
+
+.course-box img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  border-radius: 14px;
+  margin-bottom: 20px;
 }
 
 .course-box:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.07);
-}
-
-.course-box h3 {
-  font-size: 22px;
-  margin-bottom: 10px;
-  color: var(--green-dark);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
 }
 
 .course-subtitle {
@@ -284,3 +293,103 @@ footer a:hover {
     font-size: 28px;
   }
 }
+/* ================= MODAL FIXED ================= */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(6px);
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal-content {
+  background: #ffffff;
+  width: 100%;
+  max-width: 750px;
+  margin: auto;
+  border-radius: 20px;
+  padding: 35px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+/* Modal Image */
+.modal-content img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: contain;
+  border-radius: 16px;
+  margin-bottom: 25px;
+}
+
+/* Modal Text */
+.modal-content h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: #0f3d2e;
+}
+
+.modal-content h4 {
+  font-size: 18px;
+  margin-top: 18px;
+  margin-bottom: 8px;
+  color: #145a40;
+}
+
+.modal-content p,
+.modal-content li {
+  font-size: 16.5px;
+  line-height: 1.8;
+  color: #2e3d36;
+}
+
+.close {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #0f3d2e;
+}
+
+@media (max-width: 768px) {
+
+  .course-grid {
+    gap: 30px;
+  }
+
+  .modal-content {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    border-radius: 0;
+    padding: 25px 18px;
+  }
+
+  .modal-content img {
+    max-height: 260px;
+    margin-bottom: 20px;
+  }
+
+  .modal-content h2 {
+    font-size: 22px;
+  }
+
+  .modal-content h4 {
+    font-size: 17px;
+  }
+
+  .modal-content p,
+  .modal-content li {
+    font-size: 16.5px;
+    line-height: 1.8;
+  }
+
+  .close {
+    font-size: 30px;
+  }
+}
+
