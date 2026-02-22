@@ -36,17 +36,34 @@ body {
 /* =================================================
    HOME PAGE (GREEN ONLY)
 ================================================= */
+/* ================= HOME PAGE ================= */
 .home-page {
-  background: radial-gradient(circle at top, #1f6f4a, #0f3d2e);
+  background: linear-gradient(135deg, #1f6f4a, #0f3d2e);
+}
+
+/* Hero text white only */
+.home-page .hero h1,
+.home-page .hero p {
   color: #ffffff;
 }
 
-.home-page h1,
-.home-page h2,
-.home-page h3,
-.home-page p,
-.home-page li {
+/* Make section titles white only on green background */
+.home-page .section-title {
   color: #ffffff;
+}
+
+/* Cards stay white with dark text */
+.home-page .card {
+  background: #ffffff;
+  color: #1f3a2e;
+}
+
+.home-page .card h3 {
+  color: #0f3d2e;
+}
+
+.home-page .card p {
+  color: #4a5c54;
 }
 
 /* =================================================
