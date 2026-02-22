@@ -341,4 +341,34 @@ footer {
     font-size: 16.5px;
   }
 }
+.pillars {
+  padding: 80px 20px;
+  text-align: center;
+}
 
+.pillars-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+/* Make last card align nicely */
+.pillars-container .card:nth-child(4) {
+  grid-column: 1 / 2;
+}
+
+/* Responsive fix */
+@media (max-width: 992px) {
+  .pillars-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .pillars-container {
+    grid-template-columns: 1fr;
+  }
+}
