@@ -467,3 +467,100 @@ footer a:hover {
     font-size: 30px;
   }
 }
+
+/* =============================
+   SOFT SAGE + GREEN THEME
+   (Color Only Override)
+============================= */
+
+/* Page Background */
+body {
+  background-color: #eef3ef !important;   /* soft sage */
+  color: #2e3d36 !important;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #1f3a2e !important;   /* dark green */
+}
+
+/* Paragraphs */
+p, li, span {
+  color: #4a5c54 !important;   /* muted green-grey */
+}
+
+/* Navigation */
+nav, header {
+  background: #ffffff !important;
+}
+
+nav a, header a {
+  color: #1f3a2e !important;
+}
+
+nav a:hover {
+  color: #25b05a !important;
+}
+
+/* Cards / Boxes */
+.card,
+.course-card,
+.why-box,
+.contact-box,
+.modal-content {
+  background: #ffffff !important;
+  border: 1px solid #d7e4dc !important;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05) !important;
+  color: #2e3d36 !important;
+}
+
+/* Feature tags / pills */
+.tag,
+.badge {
+  background: #f3f6f4 !important;
+  border: 1px solid #cfe0d6 !important;
+  color: #2e3d36 !important;
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 14px;
+}
+
+/* Buttons (like Enroll Now) */
+button,
+.btn {
+  background: linear-gradient(135deg, #29c46a, #1fa555) !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 30px !important;
+  padding: 12px 28px !important;
+  font-weight: 600;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+button:hover,
+.btn:hover {
+  background: linear-gradient(135deg, #24b060, #1c8f49) !important;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  background: #1f3a2e !important;
+  color: #ffffff !important;
+}
+
+footer a {
+  color: #ffffff !important;
+}
+
+/* Modal background */
+.modal {
+  background: rgba(0,0,0,0.4) !important;
+}
+
+/* Contact email link */
+.contact-box a {
+  color: #1fa555 !important;
+  font-weight: 600;
+}
