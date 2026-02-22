@@ -564,3 +564,63 @@ footer a {
   color: #1fa555 !important;
   font-weight: 600;
 }
+/* =========================
+   DARK GREEN THEME (SAFE)
+   Only colors changed
+========================= */
+
+/* Background */
+body {
+  background-color: #0f3d2e !important;
+  color: #ffffff !important;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff !important;
+}
+
+/* Paragraphs */
+p, li, span {
+  color: #e6f2ec !important;
+}
+
+/* Navigation links */
+nav a,
+header a {
+  color: #ffffff !important;
+}
+
+/* Buttons */
+button,
+.btn {
+  background-color: #ffffff !important;
+  color: #0f3d2e !important;
+  border: none !important;
+}
+
+button:hover,
+.btn:hover {
+  background-color: #e6e6e6 !important;
+}
+
+/* Cards / Boxes */
+.card,
+.course-card,
+.why-box,
+.contact-box,
+.modal-content {
+  background-color: #145a40 !important;
+  color: #ffffff !important;
+}
+
+/* Footer */
+footer {
+  background-color: #0c2f24 !important;
+  color: #ffffff !important;
+}
+
+/* Links inside footer */
+footer a {
+  color: #ffffff !important;
+}
